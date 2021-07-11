@@ -1,0 +1,64 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//media query
+
+// 0-600px : phone
+// 600-900: tablet portrait
+// 900-1200: tablet landscape
+// 1200-1800: normal styles
+// 1800+: big screen
+
+// order : Base +typography > general layout + grid > page layout > components
+
+// @mixin respond($breakpoint) {
+//   @if $breakpoint == phone {
+//     @media (max-width: 37.5em) {
+//       @content;
+//     }
+//   }
+//   @if $breakpoint == tab-port {
+//     @media (max-width: 900px) {
+//       @content;
+//     }
+//   }
+
+//   @if $breakpoint == tab-land {
+//     @media (max-width: 1200px) {
+//       @content;
+//     }
+//   }
+
+//   @if $breakpoint == big-desktop {
+//     @media (min-width: 1800px) {
+//       @content;
+//     }
+//   }
+// }
+
+// @mixin respond($breakpoint) {
+//   @media (max-width: $breakpoint/16px * 1em) {
+//     @content;
+//   }
+// }
+
+@mixin respondMax($breakpoint) {
+  @media (max-width: $breakpoint/16px * 1em) {
+    @content;
+  }
+}
+
+@mixin respondMin($breakpoint) {
+  @media (min-width: $breakpoint/16px * 1em) {
+    @content;
+  }
+}
+
+@function base-font-size($pixels) {
+  @return percentage($pixels / 16px);
+}

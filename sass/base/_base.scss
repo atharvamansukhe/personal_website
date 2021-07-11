@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: base-font-size(10px);
+
+  @include respondMin($big-desktop) {
+    font-size: base-font-size(13px);
+  }
+
+  @include respondMax($tab-land) {
+    font-size: base-font-size(9px);
+  }
+
+  @include respondMax($tab-port) {
+    font-size: base-font-size(8px);
+  }
+
+  @include respondMax($phone) {
+    font-size: base-font-size(6px);
+  }
+}
+
+body {
+  box-sizing: border-box;
+
+  @include respondMax($tab-port) {
+    max-width: 100vw;
+  }
+}

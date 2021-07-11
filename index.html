@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva Mansukhe | Web developer, UI/UX design</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.ico">
+</head>
+
+<body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button"><span
+                class="navigation__icon">&nbsp;</span></label>
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#"
+                        class="navigation__link"
+                        onclick="document.querySelector('.navigation__checkbox').checked=false">About
+                        Natours</a></li>
+                <li class="navigation__item"><a href="#"
+                        class="navigation__link"
+                        onclick="document.querySelector('.navigation__checkbox').checked=false">Your
+                        benefits</a></li>
+                <li class="navigation__item"><a href="#"
+                        class="navigation__link"
+                        onclick="document.querySelector('.navigation__checkbox').checked=false">Popular
+                        tours</a></li>
+                <li class="navigation__item"><a href="#"
+                        class="navigation__link"
+                        onclick="document.querySelector('.navigation__checkbox').checked=false">Stories</a>
+                </li>
+                <li class="navigation__item"><a href="#"
+                        class="navigation__link"
+                        onclick="document.querySelector('.navigation__checkbox').checked=false">Book
+                        now</a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="header">
+        <div class="header__logo-box">
+            <p class="header__logo">Atharva</p>
+        </div>
+        <div class="header__desc">
+            <div class="header__desc-1">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--sub">Hi, I'm</span> <span
+                        class="heading-primary--main">Atharva Mansukhe</span>
+                </h1>
+            </div>
+            <div class="header__desc-2">
+                <p class="paragraph">a student and a fullstack web developer.
+                    I like creating websites
+                    with the latest designs and layouts. My tech stack includes-
+                    HTML,
+                    React, Sass for frontend ; Node.js, Express for backend ;
+                    MongoDB
+                    for database. I'm looking for new challenges so feel free to
+                    contact me!</p>
+            </div>
+
+        </div>
+
+        <div class="header__socials">
+            <a href="http://github.com" class="header__socials-link">
+                <ion-icon name="logo-github" class="icon"></ion-icon>
+            </a>
+            <a href="http://linkedin.com" class="header__socials-link">
+                <ion-icon name="logo-linkedin" class="icon"></ion-icon>
+            </a>
+            <a href="http://discord.com" class="header__socials-link">
+                <ion-icon name="logo-discord" class="icon"></ion-icon>
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="about">about</section>
+        <section class="projects">projects</section>
+        <section class="gallery">gallery</section>
+        <section class="misc">misc info</section>
+        <section class="contact">contact me</section>
+    </main>
+    <footer class="footer">
+
+        <!--Waves Container-->
+        <div class="footer__waves">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+                preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0"
+                        fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3"
+                        fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5"
+                        fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+            <div class="copyright">
+                <p> &copy; 2021 Atharva Mansukhe</p>
+            </div>
+        </div>
+        <!--Waves end-->
+
+    </footer>
+
+    <script type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
