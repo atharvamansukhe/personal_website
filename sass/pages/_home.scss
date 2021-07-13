@@ -1,16 +1,58 @@
 main {
-  background: linear-gradient(
+  // background: linear-gradient(
+  //   60deg,
+  //   rgba(84, 58, 183, 1) 0%,
+  //   rgba(0, 172, 193, 1) 100%
+  // );
+}
+
+.about {
+  height: 50rem;
+  background-image: linear-gradient(
     60deg,
-    rgba(84, 58, 183, 1) 0%,
-    rgba(0, 172, 193, 1) 100%
+    rgba($color-nav-light, 0.3) 0%,
+    rgba($color-primary, 0.2) 100%
   );
 }
 
 .projects {
   height: 100rem;
+  padding: 8rem 4rem;
   text-align: center;
+  background-color: $color-grey-light-2;
 
   &__container {
     display: flex;
+    justify-content: space-evenly;
+    margin: 5rem 0;
+
+    &-box {
+      height: 15rem;
+      width: 10rem;
+      border: 1px solid black;
+    }
   }
+}
+
+.gallery {
+  height: 50rem;
+  background-image: linear-gradient(
+    to top right,
+    rgba($color-nav-light, 0.6) 0%,
+    rgba($color-primary, 0.4) 90%
+  );
+}
+
+.misc {
+  height: 50rem;
+  background-color: $color-grey-light-2;
+}
+
+.contact {
+  height: 50rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-nav-light, 0.6) 0%,
+    rgba($color-primary, 0.4) 90%
+  );
 }

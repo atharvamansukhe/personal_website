@@ -1,0 +1,25 @@
+.socials {
+  margin-top: 4rem;
+
+  &-link {
+    display: inline-block;
+    transition: all 0.2s;
+
+    &:link,
+    &:visited {
+      color: inherit;
+    }
+
+    &--1:hover {
+      color: #fff;
+    }
+
+    &--2:hover {
+      color: #0e76a8;
+    }
+
+    &--3:hover {
+      color: #7289d9;
+    }
+  }
+}
