@@ -5,3 +5,12 @@ main {
     rgba(0, 172, 193, 1) 100%
   );
 }
+
+.projects {
+  height: 100rem;
+  text-align: center;
+
+  &__container {
+    display: flex;
+  }
+}

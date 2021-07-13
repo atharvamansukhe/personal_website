@@ -48,7 +48,7 @@
             </ul>
         </nav>
     </div>
-    <header class="header">
+    <header class="header" id="header">
         <div class="header__logo-box">
             <p class="header__logo">Atharva</p>
         </div>
@@ -83,10 +83,27 @@
                 <ion-icon name="logo-discord" class="icon"></ion-icon>
             </a>
         </div>
+        <div class="header__cta">
+            <a href="#popup" class="btn btn--green">CV</a>
+            <a href="#" class="btn btn--white">
+                <ion-icon name="arrow-down-circle-outline">
+                </ion-icon>
+                </ion-icon>
+            </a>
+        </div>
+
     </header>
     <main>
         <section class="about">about</section>
-        <section class="projects">projects</section>
+        <section class="projects" id="projects">
+            <h2 class="heading-secondary">Projects</h2>
+            <div class="projects__container">
+                <h3 class="heading-tertiary">Frontend projects</h3>
+            </div>
+            <div class="projects__container">
+                <h3 class="heading-tertiary">Fullstack projects</h3>
+            </div>
+        </section>
         <section class="gallery">gallery</section>
         <section class="misc">misc info</section>
         <section class="contact">contact me</section>
@@ -119,6 +136,35 @@
         <!--Waves end-->
 
     </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="#" alt="tour photo" class="popup__img">
+                <img src="#" alt="tour photo" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#header" class="popup__close">&times;</a>
+                <h2 class="heading-secondary u-mb-sm">Start booking now</h2>
+                <h3 class="heading-tertiary u-mb-sm">Important &ndash; Please
+                    read these
+                    terms before booking</h3>
+                <p class="popup__text">Lorem ipsum dolor sit amet
+                    consectetur
+                    adipisicing elit. Delectus perferendis voluptatum optio
+                    provident commodi nam voluptas velit excepturi reprehenderit
+                    expedita? Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Corporis vitae quia maiores soluta neque
+                    laborum odit sint, quo enim facere. Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Sequi nostrum alias
+                    ducimus repellat suscipit, aliquid molestiae minus porro
+                    dolor laudantium. Lorem ipsum dolor, sit amet consectetur
+                    adipisicing elit. Mollitia velit ipsum quis alias error
+                    nulla dolore impedit aperiam expedita placeat.</p>
+                <a href="#" class="btn btn--green">Book now</a>
+            </div>
+        </div>
+    </div>
 
     <script type="module"
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

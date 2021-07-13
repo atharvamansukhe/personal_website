@@ -5,7 +5,7 @@
       rgba($color-black, 0.7),
       rgba($color-black, 0.9)
     ),
-    url(../img/cover.jpg);
+    url(../img/cover2.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -20,7 +20,7 @@
         rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8)
       ),
-      url(../img/hero.jpg);
+      url(../img/cover2.jpg);
   }
 
   @include respondMax($phone) {
@@ -43,7 +43,7 @@
 
   &__desc {
     display: flex;
-
+    margin-top: 10rem;
     max-width: 70vw;
 
     &-1 {
@@ -60,7 +60,7 @@
   }
 
   &__socials {
-    margin-top: 8rem;
+    margin-top: 4rem;
     text-align: center;
 
     &-link {
@@ -70,5 +70,9 @@
         color: inherit;
       }
     }
+  }
+
+  &__cta {
+    padding-top: 3rem;
   }
 }

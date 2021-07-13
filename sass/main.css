@@ -198,17 +198,11 @@ body {
 
 .heading-secondary {
   font-size: 3.5rem;
+  color: #ffb900;
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: -webkit-gradient(linear, left top, right top, from(#ffb900), to(#ff7730));
-  background-image: linear-gradient(to right, #ffb900, #ff7730);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
   letter-spacing: 2px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
 }
 
 @media (max-width: 56.25em) {
@@ -350,7 +344,7 @@ body {
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.5rem 4rem;
+  padding: 1rem 2rem;
   display: inline-block;
   border-radius: 10rem;
   -webkit-transition: all 0.2s;
@@ -384,6 +378,7 @@ body {
 .btn--white {
   background-color: #fff;
   color: #777;
+  font-size: 2rem;
 }
 
 .btn--white::after {
@@ -1286,8 +1281,8 @@ body {
 
 .header {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.9))), url(../img/cover.jpg);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/cover.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.9))), url(../img/cover2.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url(../img/cover2.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -1308,8 +1303,8 @@ body {
 
 @media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
   .header {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.8)), to(rgba(255, 119, 48, 0.8))), url(../img/hero.jpg);
-    background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url(../img/hero.jpg);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 185, 0, 0.8)), to(rgba(255, 119, 48, 0.8))), url(../img/cover2.jpg);
+    background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.8), rgba(255, 119, 48, 0.8)), url(../img/cover2.jpg);
   }
 }
 
@@ -1339,6 +1334,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 10rem;
   max-width: 70vw;
 }
 
@@ -1361,7 +1357,7 @@ body {
 }
 
 .header__socials {
-  margin-top: 8rem;
+  margin-top: 4rem;
   text-align: center;
 }
 
@@ -1371,6 +1367,10 @@ body {
 
 .header__socials-link:link, .header__socials-link:visited {
   color: inherit;
+}
+
+.header__cta {
+  padding-top: 3rem;
 }
 
 .footer {
@@ -1641,5 +1641,16 @@ body {
 
 main {
   background: linear-gradient(60deg, #543ab7 0%, #00acc1 100%);
+}
+
+.projects {
+  height: 100rem;
+  text-align: center;
+}
+
+.projects__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=main.css.map */
