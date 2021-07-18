@@ -1,9 +1,7 @@
 .footer {
   font-size: 1.4rem;
   position: relative;
-  @include respondMax($tab-port) {
-    padding: 8rem 0;
-  }
+  overflow: hidden;
 
   &__container {
     display: flex;
@@ -13,40 +11,15 @@
 
   &__logo-box {
     text-align: center;
-
-    @include respondMax($tab-port) {
-      margin-bottom: 6rem;
-    }
   }
 
   &__logo {
     font-family: "Fuggles", cursive;
     color: $color-secondary-dark;
     font-size: 3.5rem;
-  }
 
-  &__navigation {
-    border-top: 1px solid $color-grey-dark;
-    padding-top: 2rem;
-    display: inline-block;
-
-    @include respondMax($tab-port) {
-      display: block;
-      text-align: center;
-      max-width: 80%;
-      margin: 0 auto;
-    }
-  }
-
-  &__list {
-    list-style: none;
-  }
-
-  &__item {
-    display: inline-block;
-
-    &:not(:last-child) {
-      margin-right: 1.5rem;
+    @include respondMax($phone) {
+      display: none;
     }
   }
 
@@ -56,23 +29,15 @@
     @include respondMax($tab-port) {
       display: block;
       text-align: center;
-      max-width: 80%;
-      margin: 0 auto;
     }
-  }
-
-  &__waves {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 26vh;
   }
 
   &__socials {
     margin-right: 2rem;
-    .socials-link--1:hover {
-      color: $color-grey-dark3;
+
+    @include respondMax($phone) {
+      margin-right: 0;
+      width: fit-content;
     }
   }
 }

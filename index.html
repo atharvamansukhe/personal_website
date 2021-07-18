@@ -9,157 +9,193 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fuggles&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fuggles&family=Parisienne&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="sass/main.min.css">
     <link rel="shortcut icon" type="image/png" href="/img/favicon.ico">
 </head>
 
 <body>
-    <div class="navigation">
-        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
-        <label for="navi-toggle" class="navigation__button"><span
-                class="navigation__icon">&nbsp;</span></label>
-        <div class="navigation__background">&nbsp;</div>
-
-        <nav class="navigation__nav">
-            <ul class="navigation__list">
-                <li class="navigation__item"><a href="#"
-                        class="navigation__link"
-                        onclick="document.querySelector('.navigation__checkbox').checked=false">About
-                        Natours</a></li>
-                <li class="navigation__item"><a href="#"
-                        class="navigation__link"
-                        onclick="document.querySelector('.navigation__checkbox').checked=false">Your
-                        benefits</a></li>
-                <li class="navigation__item"><a href="#"
-                        class="navigation__link"
-                        onclick="document.querySelector('.navigation__checkbox').checked=false">Popular
-                        tours</a></li>
-                <li class="navigation__item"><a href="#"
-                        class="navigation__link"
-                        onclick="document.querySelector('.navigation__checkbox').checked=false">Stories</a>
-                </li>
-                <li class="navigation__item"><a href="#"
-                        class="navigation__link"
-                        onclick="document.querySelector('.navigation__checkbox').checked=false">Book
-                        now</a></li>
-            </ul>
-        </nav>
-    </div>
 
     <header class="header" id="header">
 
-        <div class="header__logo-box">
-            <p class="header__logo">Atharva</p>
+        <div class="header__desc">
+            <div class="header__desc-1">
+                <h1 class="heading-primary heading-primary--main">
+                    <span class="heading-primary--main">Atharva
+                        Mansukhe</span><span
+                        class="heading-primary--secondary">Web developer</span>
+                </h1>
+
+            </div>
+
         </div>
-        <div class="glass-box">
-            <div class="header__desc">
-                <div class="header__desc-1">
-                    <h1 class="heading-primary">
-                        <span class="heading-primary--sub">Hi, I'm</span> <span
-                            class="heading-primary--main">Atharva
-                            Mansukhe</span>
-                    </h1>
-                </div>
-                <div class="header__desc-2">
-                    <p class="paragraph">a student and a fullstack web
-                        developer.
-                        I like creating websites
-                        with the latest designs and layouts. My tech stack
-                        includes-
-                        HTML,
-                        React, Sass for frontend ; Node.js, Express for backend
-                        ;
-                        MongoDB
-                        for database. I'm looking for new challenges so feel
-                        free to
-                        contact me!</p>
-                </div>
-
-            </div>
 
 
-            <div class="header__socials">
-                <a href="http://github.com" class="socials-link socials-link--1"
-                    target="_blank">
-                    <ion-icon name="logo-github" class="icon"></ion-icon>
-                </a>
-                <a href="http://linkedin.com"
-                    class="socials-link socials-link--2" target="_blank">
-                    <ion-icon name="logo-linkedin" class="icon"></ion-icon>
-                </a>
-                <a href="http://discord.com"
-                    class="socials-link socials-link--3" target="_blank">
-                    <ion-icon name="logo-discord" class="icon"></ion-icon>
-                </a>
-            </div>
-            <div class="header__cta">
-                <a href="#popup" class="btn btn--green">CV</a>
-                <a href="#" class="btn btn--white">
-                    <ion-icon name="arrow-down-circle-outline">
-                    </ion-icon>
-                    </ion-icon>
-                </a>
-            </div>
+        <div class="header__socials">
+            <a href="http://github.com/atharvamansukhe"
+                class="socials-link socials-link--1" target="_blank">
+                <ion-icon name="logo-github" class="icon"></ion-icon>
+            </a>
+            <a href="http://www.linkedin.com/in/atharva-mansukhe-867188173/"
+                class="socials-link socials-link--2" target="_blank">
+                <ion-icon name="logo-linkedin" class="icon"></ion-icon>
+            </a>
+            <a href="https://twitter.com/athxrva"
+                class="socials-link socials-link--3" target="_blank">
+                <ion-icon name="logo-twitter" class="icon"></ion-icon>
+            </a>
         </div>
+
+
     </header>
     <main>
+        <section class="about" id="about">
+            <h2 class="heading-secondary">about me</h2>
+            <div class="about__text">
+                <p class="paragraph">Hi! I'm Atharva Mansukhe, a student and a
+                    fullstack web
+                    developer from Pune, India.
+                    I like creating websites
+                    with the latest designs and layouts. My tech stack
+                    includes-
+                    HTML,
+                    React, Sass for frontend ; Node.js, Express for backend
+                    ;
+                    MongoDB
+                    for database.</p>
+                <p class="paragraph">Have a look at my Github, skills or just
+                    connect with me on
+                    LinkedIn. I'm always looking for new challenges so feel
+                    free to contact me !</p>
+            </div>
+            <div class="about__cta">
+                <a href="#popup" class="btn btn--green">CV</a>
+                <a href="#" class="btn btn--white">
+                    <ion-icon name="arrow-down-circle-outline"
+                        class="icon-download">
+                    </ion-icon>
+                </a>
+            </div>
+        </section>
+        <section class="skills">
+            <h2 class="heading-secondary">Skills</h2>
+            <div class="skills__container">
+                <div class="skills__list">
+                    <h3 class="heading-tertiary u-mb-sm">Core</h3>
+                    <ul class="skills__list--1">
+                        <li>HTML5</li>
+                        <li>CSS</li>
+                        <li>Sass</li>
+                        <li>JS</li>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skills__list">
+                    <h3 class="heading-tertiary u-mb-sm">Interests</h3>
+                    <ul class="skills__list--1">
+                        <li>Typescript</li>
+                        <li>Vue.js</li>
+                        <li>Next.js</li>
+                        <li>React Redux</li>
+                        <li>GraphQL</li>
+                        <li>Express</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
         <section class="projects" id="projects">
             <h2 class="heading-secondary">Projects</h2>
             <h3 class="heading-tertiary u-mt-md">Frontend projects</h3>
             <div class="projects__container">
-                <div class="projects__container-box">1</div>
-                <div class="projects__container-box">2</div>
-                <div class="projects__container-box">3</div>
+                <div class="projects__container-box">
+                    <h4>Nexter</h4>
+                    <p class="projects__desc"><a
+                            href="https://nexterr-demo.netlify.app/"
+                            target="_blank">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a> <a href="https://github.com/atharvamansukhe/nexter"
+                            target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </p>
+                </div>
+                <div class="projects__container-box">
+                    <h4>Trillo</h4>
+                    <p class="projects__desc"><a
+                            href="https://trillo-demo.netlify.app"
+                            target="_blank">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a> <a href="https://github.com/atharvamansukhe/trillo"
+                            target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a></p>
+                </div>
+                <div class="projects__container-box">
+                    <h4>Natours</h4>
+                    <p class="projects__desc"><a
+                            href="https://natours-demo.netlify.app"
+                            target="_blank">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a> <a
+                            href="https://github.com/atharvamansukhe/natours"
+                            target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a></p>
+                </div>
+
 
             </div>
             <h3 class="heading-tertiary u-mt-md">Fullstack projects</h3>
             <div class="projects__container">
-                <div class="projects__container-box">1</div>
-                <div class="projects__container-box">2</div>
-                <div class="projects__container-box">3</div>
+                <div class="projects__container-box">
+                    <h4>YelpCamp</h4>
+                    <p class="projects__desc"><a
+                            href="https://cryptic-brook-22844.herokuapp.com/campgrounds"
+                            target="_blank">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a> <a
+                            href="https://github.com/atharvamansukhe/YelpCamp"
+                            target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a></p>
+                </div>
+                <div class="projects__container-box">
+                    <h4>Todo List</h4>
+                    <p class="projects__desc"><a
+                            href="https://peaceful-gorge-06817.herokuapp.com/"
+                            target="_blank">
+                            <ion-icon name="link-outline"></ion-icon>
+                        </a> <a
+                            href="https://github.com/atharvamansukhe/todoList"
+                            target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a></p>
+                </div>
+
             </div>
         </section>
-        <section class="about">
-            <img src="" alt="img">
-            <h3 class="heading-tertiary">about myself</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Ratione
-                ex, debitis illum reprehenderit voluptatibus officiis
-                excepturi
-                ullam dolores explicabo inventore autem. Iste illum aliquid
-                dolorem voluptate odio amet eligendi suscipit eos unde,
-                autem
-                minus cupiditate, eum ipsa commodi reprehenderit est?</p>
+
+
+        <section class="contact">
+            <h2 class="heading-secondary">contact me</h2>
+            <p class="paragraph u-mt-md">I'm open for freelance projects and
+                collaborations, just send me a message if you want to work with
+                me or share your ideas.</p>
+            <p class="paragraph">Connect with me on <a
+                    href="http://www.linkedin.com/in/atharva-mansukhe-867188173"
+                    target="_blank" rel="noopener noreferrer">Linkedin</a>, <a
+                    href="https://twitter.com/athxrva" target="_blank"
+                    rel="noopener noreferrer">Twitter</a>, or just send me an
+                <a href="mailto:atharvamansukhe7@gmail.com">email</a>.
+            </p>
         </section>
-        <section class="misc">misc info</section>
-        <section class="contact">contact me</section>
     </main>
     <footer class="footer">
-
-        <!--Waves Container-->
-        <div class="footer__waves">
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
-                preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                    <path id="gentle-wave"
-                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                </defs>
-                <g class="parallax">
-                    <use xlink:href="#gentle-wave" x="48" y="0"
-                        fill="rgba(255,255,255,0.7" />
-                    <use xlink:href="#gentle-wave" x="48" y="3"
-                        fill="rgba(255,255,255,0.5)" />
-                    <use xlink:href="#gentle-wave" x="48" y="5"
-                        fill="rgba(255,255,255,0.3)" />
-                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
-                </g>
-            </svg>
-        </div>
-        <!--Waves end-->
         <div class="footer__container">
             <div class="footer__copyright">
                 <p> &copy; 2021 Atharva Mansukhe</p>
@@ -168,17 +204,17 @@
                 <p class="footer__logo">Atharva</p>
             </div>
             <div class="footer__socials">
-                <a href="http://github.com" class="socials-link socials-link--1"
-                    target="_blank">
+                <a href="http://github.com/atharvamansukhe"
+                    class="socials-link socials-link--1" target="_blank">
                     <ion-icon name="logo-github" class="icon"></ion-icon>
                 </a>
-                <a href="http://linkedin.com"
+                <a href="http://www.linkedin.com/in/atharva-mansukhe-867188173"
                     class="socials-link socials-link--2" target="_blank">
                     <ion-icon name="logo-linkedin" class="icon"></ion-icon>
                 </a>
-                <a href="http://discord.com"
+                <a href="https://twitter.com/athxrva"
                     class="socials-link socials-link--3" target="_blank">
-                    <ion-icon name="logo-discord" class="icon"></ion-icon>
+                    <ion-icon name="logo-twitter" class="icon"></ion-icon>
                 </a>
             </div>
         </div>
@@ -186,29 +222,10 @@
 
     <div class="popup" id="popup">
         <div class="popup__content">
-            <div class="popup__left">
-                <img src="#" alt="tour photo" class="popup__img">
-                <img src="#" alt="tour photo" class="popup__img">
-            </div>
+
             <div class="popup__right">
-                <a href="#header" class="popup__close">&times;</a>
-                <h2 class="heading-secondary u-mb-sm">Start booking now</h2>
-                <h3 class="heading-tertiary u-mb-sm">Important &ndash; Please
-                    read these
-                    terms before booking</h3>
-                <p class="popup__text">Lorem ipsum dolor sit amet
-                    consectetur
-                    adipisicing elit. Delectus perferendis voluptatum optio
-                    provident commodi nam voluptas velit excepturi reprehenderit
-                    expedita? Lorem ipsum dolor sit, amet consectetur
-                    adipisicing elit. Corporis vitae quia maiores soluta neque
-                    laborum odit sint, quo enim facere. Lorem ipsum dolor sit
-                    amet consectetur adipisicing elit. Sequi nostrum alias
-                    ducimus repellat suscipit, aliquid molestiae minus porro
-                    dolor laudantium. Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Mollitia velit ipsum quis alias error
-                    nulla dolore impedit aperiam expedita placeat.</p>
-                <a href="#" class="btn btn--green">Book now</a>
+                <a href="#about" class="popup__close">&times;</a>
+
             </div>
         </div>
     </div>

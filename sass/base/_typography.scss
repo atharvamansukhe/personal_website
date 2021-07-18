@@ -6,27 +6,20 @@ body {
   color: $color-grey-dark;
 }
 
-.heading-primary,
 .heading-secondary,
 .heading-tertiary {
   font-family: "SinkinSans-400Regular", sans-serif;
 }
 
 .heading-primary {
+  font-family: "Parisienne", cursive;
   color: $color-grey-light-2;
   backface-visibility: hidden;
 
   &--main {
-    background-image: linear-gradient(
-      to right,
-      $color-primary-light,
-      $color-primary-dark
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
     display: block;
-    font-size: 4rem;
+    line-height: 1.2;
+    font-size: 8rem;
     font-weight: 400;
     letter-spacing: 0.7rem;
     animation: moveInLeft 1s ease-out;
@@ -36,26 +29,25 @@ body {
     }
   }
 
-  &--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 400;
-    //letter-spacing: 1.72rem;
-    padding-left: 1.72rem;
-    padding-bottom: 2rem;
-    animation: moveInRight 1s ease;
+  &--secondary {
+    font-family: "SinkinSans-400Regular", sans-serif;
+    font-size: 3rem;
+    color: $color-grey-dark;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1rem;
 
     @include respondMax($phone) {
-      letter-spacing: 0.5rem;
+      font-size: 1.5rem;
     }
   }
 }
 
 .heading-secondary {
-  font-size: 3.5rem;
-  color: $color-primary-light;
+  font-size: 3rem;
+  color: rgba($color-primary, 0.7);
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   display: inline-block;
   letter-spacing: 2px;
 
@@ -70,16 +62,16 @@ body {
 }
 
 .heading-tertiary {
-  font-size: $default-font-size;
+  color: $color-grey-dark2;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .paragraph {
-  font-size: 2rem;
-  color: $color-grey-dark2;
-
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
+  font-size: 2.2rem;
+  font-weight: 200;
+  color: $color-grey-dark;
+  margin-bottom: 3rem;
+  letter-spacing: 1.3px;
 }

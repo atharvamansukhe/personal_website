@@ -2,7 +2,7 @@ $color-secondary-light: #334257;
 $color-secondary-dark: #202833;
 
 $color-grey-dark: #777;
-$color-grey-dark2: #bbb;
+$color-grey-dark2: #aaa;
 $color-grey-dark3: #333;
 
 $color-primary-light: #ffb900;
@@ -19,21 +19,13 @@ $color-white: #fff;
 $color-black: #000;
 
 $color-nav-dark: rgba(84, 58, 183, 1);
-$color-nav-light: rgba(0, 172, 193, 1);
+$color-nav-light: #20a87f;
 
 //fontsize
 $default-font-size: 1.6rem;
-
-//grid
-$grid-width: 114rem;
-$gutter-vertical: 8rem;
-$gutter-vertical-sm: 5rem;
-$gutter-horizontal: 6rem;
 
 //media queries
 $phone: 600px; //37.5em
 $tab-port: 900px; //56.5em
 $tab-land: 1200px; //75em
 $big-desktop: 1800px; //112.5em
-
-$image: "../img/cover2.jpg";

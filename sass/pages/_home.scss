@@ -1,25 +1,35 @@
-main {
-  // background: linear-gradient(
-  //   60deg,
-  //   rgba(84, 58, 183, 1) 0%,
-  //   rgba(0, 172, 193, 1) 100%
-  // );
-}
-
 .about {
-  height: 50rem;
-  background-image: linear-gradient(
-    60deg,
-    rgba($color-nav-light, 0.3) 0%,
-    rgba($color-primary, 0.2) 100%
-  );
+  min-height: 60rem;
+  padding: 8rem 25rem;
+  text-align: center;
+  background-color: $color-grey-light-2;
+
+  @include respondMax($tab-port) {
+    padding: 5rem 10rem;
+  }
+
+  @include respondMax($phone) {
+    padding: 5rem;
+  }
+
+  &__text {
+    margin: 5rem 0;
+  }
 }
 
 .projects {
-  height: 100rem;
-  padding: 8rem 4rem;
+  height: 80rem;
+  padding: 8rem 10rem;
   text-align: center;
   background-color: $color-grey-light-2;
+
+  @include respondMax($tab-port) {
+    padding: 5rem 10rem;
+  }
+
+  @include respondMax($phone) {
+    padding: 5rem 2rem;
+  }
 
   &__container {
     display: flex;
@@ -27,32 +37,92 @@ main {
     margin: 5rem 0;
 
     &-box {
-      height: 15rem;
-      width: 10rem;
-      border: 1px solid black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 3rem;
+
+      box-shadow: 0 0.1rem 0.8rem rgba($color-black, 0.15);
+    }
+  }
+
+  &__desc {
+    font-size: 2rem;
+    margin-top: 3rem;
+
+    a:link,
+    a:visited {
+      display: inline-block;
+      color: $color-secondary-light;
+      padding: 1rem;
     }
   }
 }
 
-.gallery {
-  height: 50rem;
+.skills {
+  height: auto;
   background-image: linear-gradient(
-    to top right,
-    rgba($color-nav-light, 0.6) 0%,
-    rgba($color-primary, 0.4) 90%
+    rgba($color-nav-light, 0.3),
+    rgba($color-nav-light, 0.3)
   );
-}
+  padding: 8rem 10rem;
+  text-align: center;
 
-.misc {
-  height: 50rem;
-  background-color: $color-grey-light-2;
+  @include respondMax($tab-port) {
+    padding: 5rem 10rem;
+  }
+
+  @include respondMax($phone) {
+    padding: 3rem 2rem;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 2rem;
+  }
+  &__list {
+    margin: 4rem;
+    &--1 {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      list-style: none;
+      text-align: start;
+
+      li {
+        margin: 2rem 2rem;
+        width: max-content;
+      }
+    }
+  }
 }
 
 .contact {
-  height: 50rem;
   background-image: linear-gradient(
-    to right bottom,
-    rgba($color-nav-light, 0.6) 0%,
-    rgba($color-primary, 0.4) 90%
+    rgba($color-nav-light, 0.3),
+    rgba($color-nav-light, 0.3)
   );
+  padding: 8rem 10rem;
+  text-align: center;
+
+  @include respondMax($tab-port) {
+    padding: 5rem 10rem;
+  }
+
+  @include respondMax($phone) {
+    padding: 5rem;
+  }
+
+  a:link,
+  a:visited {
+    color: $color-grey-dark3;
+    text-decoration: none;
+  }
+
+  a:hover,
+  a:active {
+    text-decoration: underline;
+  }
 }

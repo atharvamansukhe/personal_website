@@ -35,8 +35,8 @@
     top: 6.5rem;
     right: 6.5rem;
     background-image: radial-gradient(
-      rgba($color-nav-light, 0.8),
-      rgba($color-nav-light, 0.8)
+      rgba($color-primary, 0.8),
+      rgba($color-primary, 0.8)
     );
 
     z-index: 100;
@@ -104,7 +104,7 @@
     &:hover,
     &:active {
       background-position: 100%;
-      color: $color-primary;
+      color: $color-nav-light;
       transform: translateX(1rem);
     }
   }
