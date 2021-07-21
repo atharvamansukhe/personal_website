@@ -2,18 +2,23 @@
   min-height: 60rem;
   padding: 8rem 25rem;
   text-align: center;
-  background-color: $color-grey-light-2;
+  background-color: $color-grey-light-1;
 
   @include respondMax($tab-port) {
     padding: 5rem 10rem;
   }
 
   @include respondMax($phone) {
+    min-height: max-content;
     padding: 5rem;
   }
 
   &__text {
     margin: 5rem 0;
+
+    @include respondMax($phone) {
+      margin: 3rem;
+    }
   }
 }
 
@@ -21,7 +26,7 @@
   height: 80rem;
   padding: 8rem 10rem;
   text-align: center;
-  background-color: $color-grey-light-2;
+  background-color: $color-grey-light-1;
 
   @include respondMax($tab-port) {
     padding: 5rem 10rem;
@@ -41,6 +46,8 @@
       flex-direction: column;
       justify-content: space-between;
       padding: 3rem;
+      font-style: italic;
+      color: #dc7690;
 
       box-shadow: 0 0.1rem 0.8rem rgba($color-black, 0.15);
     }
@@ -53,17 +60,17 @@
     a:link,
     a:visited {
       display: inline-block;
-      color: $color-secondary-light;
+      color: $color-grey-dark3;
       padding: 1rem;
     }
   }
 }
 
 .skills {
-  height: auto;
   background-image: linear-gradient(
-    rgba($color-nav-light, 0.3),
-    rgba($color-nav-light, 0.3)
+    to bottom right,
+    rgba(#cb5eee, 0.2),
+    rgba(#4be1ec, 0.2)
   );
   padding: 8rem 10rem;
   text-align: center;
@@ -73,7 +80,7 @@
   }
 
   @include respondMax($phone) {
-    padding: 3rem 2rem;
+    padding: 3rem 7rem;
   }
 
   &__container {
@@ -84,6 +91,11 @@
   }
   &__list {
     margin: 4rem;
+
+    @include respondMax($phone) {
+      margin: 2rem;
+    }
+
     &--1 {
       display: flex;
       justify-content: space-evenly;
@@ -101,8 +113,9 @@
 
 .contact {
   background-image: linear-gradient(
-    rgba($color-nav-light, 0.3),
-    rgba($color-nav-light, 0.3)
+    to bottom right,
+    rgba(#cb5eee, 0.2),
+    rgba(#4be1ec, 0.2)
   );
   padding: 8rem 10rem;
   text-align: center;
@@ -112,17 +125,50 @@
   }
 
   @include respondMax($phone) {
-    padding: 5rem;
+    padding: 5rem 7rem;
   }
 
   a:link,
   a:visited {
     color: $color-grey-dark3;
     text-decoration: none;
+    transition: all 0.4s;
+    position: relative;
+
+    &::before {
+      transform: scaleX(0);
+      transform-origin: bottom right;
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      inset: 0 0 0 0;
+      background: #db717e;
+      z-index: -1;
+      transition: transform 0.3s ease;
+    }
+
+    @media (orientation: landscape) {
+      body {
+        grid-auto-flow: column;
+      }
+    }
   }
 
   a:hover,
   a:active {
     text-decoration: underline;
+    color: #fff;
   }
 }

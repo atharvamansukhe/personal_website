@@ -4,25 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+        content="Hello World, I'm a Web developer. If you want your own website or grow your business online then leave me a message.">
+    <meta name="keywords"
+        content="Atharva, Mansukhe, Atharva Mansukhe, web, web developer, website, web development, web designer, UI, UX, freelance, freelancer, HTML, CSS, JavaScript, pune, india">
+    <meta name="author" content="Atharva Mansukhe">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Atharva Mansukhe" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:site_name" content="Atharva Mansukhe" />
+    <meta property="og:description"
+        content="Hello World, I'm a Web developer. If you want your own website or grow your business online then leave me a message." />
     <title>Atharva Mansukhe | Web developer, UI/UX design</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fuggles&family=Parisienne&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Fuggles&family=Inconsolata:wght@300;400&family=Italianno&family=Lato:wght@300;400&family=Nunito:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="sass/main.min.css">
     <link rel="shortcut icon" type="image/png" href="/img/favicon.ico">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async
+        src="https://www.googletagmanager.com/gtag/js?id=G-MZD3ZE9KK5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MZD3ZE9KK5');
+    </script>
 </head>
 
 <body>
 
     <header class="header" id="header">
-
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list__item"><a href="#skills">Skills</a></li>
+                <li class="nav__list__item"><a href="#projects">Projects</a>
+                </li>
+                <li class="nav__list__item"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
         <div class="header__desc">
             <div class="header__desc-1">
-                <h1 class="heading-primary heading-primary--main">
+                <h1 class="heading-primary">
                     <span class="heading-primary--main">Atharva
                         Mansukhe</span><span
                         class="heading-primary--secondary">Web developer</span>
@@ -71,7 +99,7 @@
                     free to contact me !</p>
             </div>
             <div class="about__cta">
-                <a href="#popup" class="btn btn--green">CV</a>
+                <a href="#popup" class="btn btn--orange">CV</a>
                 <a href="#" class="btn btn--white">
                     <ion-icon name="arrow-down-circle-outline"
                         class="icon-download">
@@ -79,7 +107,7 @@
                 </a>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2 class="heading-secondary">Skills</h2>
             <div class="skills__container">
                 <div class="skills__list">
@@ -102,8 +130,8 @@
                         <li>Next.js</li>
                         <li>React Redux</li>
                         <li>GraphQL</li>
-                        <li>Express</li>
-                        <li>MongoDB</li>
+                        <li>Angular</li>
+                        <li>SEO</li>
                     </ul>
                 </div>
             </div>
@@ -181,7 +209,7 @@
         </section>
 
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <h2 class="heading-secondary">contact me</h2>
             <p class="paragraph u-mt-md">I'm open for freelance projects and
                 collaborations, just send me a message if you want to work with
@@ -195,7 +223,9 @@
             </p>
         </section>
     </main>
+
     <footer class="footer">
+
         <div class="footer__container">
             <div class="footer__copyright">
                 <p> &copy; 2021 Atharva Mansukhe</p>

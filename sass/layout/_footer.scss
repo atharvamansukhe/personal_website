@@ -15,7 +15,7 @@
 
   &__logo {
     font-family: "Fuggles", cursive;
-    color: $color-secondary-dark;
+    color: rgba(#9055ff, 0.8);
     font-size: 3.5rem;
 
     @include respondMax($phone) {
@@ -24,6 +24,7 @@
   }
 
   &__copyright {
+    font-family: "Inconsolata", monospace;
     margin-left: 3rem;
 
     @include respondMax($tab-port) {

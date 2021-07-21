@@ -3,7 +3,7 @@
 
   &-link {
     display: inline-block;
-    transition: all 0.2s;
+    transition: all 0.4s;
 
     &:link,
     &:visited {
@@ -20,6 +20,20 @@
 
     &--3:hover {
       color: #7289d9;
+    }
+
+    @media (max-width: $tab-port), (hover: none) {
+      &--1 {
+        color: $color-grey-dark3 !important;
+      }
+
+      &--2 {
+        color: #0e76a8 !important;
+      }
+
+      &--3 {
+        color: #7289d9 !important;
+      }
     }
   }
 }
