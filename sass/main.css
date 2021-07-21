@@ -80,6 +80,12 @@ body {
   background: rgba(144, 85, 255, 0.3);
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -651,12 +657,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 4rem;
   max-width: 70vw;
 }
 
 .header__desc-1 {
   padding: 5rem;
+  margin-top: 10rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -667,7 +673,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-left: 5rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -777,7 +782,6 @@ body {
 }
 
 .projects {
-  height: 80rem;
   padding: 8rem 10rem;
   text-align: center;
   background-color: #f7f7f7;
@@ -799,10 +803,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  margin: 5rem 0;
+  margin: 5rem;
+  margin-bottom: 3rem;
 }
 
 .projects__container-box {
@@ -817,10 +824,16 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 3rem;
+  margin: 2rem;
   font-style: italic;
+  font-size: 2rem;
   color: #dc7690;
   -webkit-box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0.1rem 0.8rem rgba(0, 0, 0, 0.15);
+}
+
+.projects__container-box a {
+  font-size: 3rem;
 }
 
 .projects__desc {

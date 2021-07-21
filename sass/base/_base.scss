@@ -62,3 +62,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(#9055ff, 0.3);
 }
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
