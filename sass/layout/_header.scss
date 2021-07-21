@@ -27,7 +27,7 @@
       font-family: "Inconsolata", monospace;
       list-style: none;
       display: flex;
-      font-size: 1.5rem;
+      font-size: 2rem;
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -80,7 +80,11 @@
       }
 
       &__item:not(:last-child) {
-        margin-right: 8rem;
+        margin-right: 10rem;
+
+        @include respondMax($phone) {
+          margin-right: 7rem;
+        }
       }
     }
   }
@@ -91,7 +95,7 @@
 
     &-1 {
       padding: 5rem;
-      margin-top: 10rem;
+      margin-top: 8rem;
       width: max-content;
       text-align: center;
     }
@@ -107,11 +111,5 @@
     text-align: center;
     color: $color-grey-light-1;
     margin-bottom: 4rem;
-  }
-
-  &__cta {
-    padding-top: 2rem;
-    margin: 0 auto;
-    text-align: center;
   }
 }
